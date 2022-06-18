@@ -1,0 +1,24 @@
+<div class="row row-cols-1 row-cols-md-2 g-1">
+    <div class="card" *ngFor="let h of miscampeones, let i=index">
+    <div class="col">
+      <div class="card">
+        <img src={{h.img}} class="card-img-top"  alt="...">
+        <div class="card-body">
+          <h1 class="card-title">{{h.nombre}}</h1>
+          <p class="card-text">{{h.bio}}</p>
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+
+
+<!-- <div class="fondo card-columns">
+    <div class="card" *ngFor="let h of miscampeones, let i=index">
+      <img src={{h.img}} class="card-img-top" alt="...">
+      <div class="card-body fondo">
+        <h5 class="card-title">{{h.nombre}}</h5>
+        <p class="card-text">{{h.bio}}</p>
+    </div>
+    
+  </div> -->

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Contrail+One&family=Courgette&family=Lobster&family=Monofett&family=Tapestry&display=swap');
+
+*{
+    font-family: 'Contrail One';
+
+}
+
+.todo{
+    height: 100vh;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    
+
+}
+
+h3{
+    font-size: 30px;
+}
+
+.contenedor{
+    position: relative;
+    top: 60px;
+}
+
+p{
+    font-size: 20px;
+}
+
+div{
+    margin-bottom: 60px;
+}

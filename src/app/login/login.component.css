@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    border-style: none;
+    outline-style: none;
+    position: relative;
+    bottom: 25px;
+}
+
+label{
+    float: left;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courgette';
+    position: relative;
+    font-size: 48px;
+    top: 50px;
+    color: aliceblue;
+}
+
+
+.consulta{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    bottom: 110px;
+}
+
+.links{
+    padding: 20px;
+}

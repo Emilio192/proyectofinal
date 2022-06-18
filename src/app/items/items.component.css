@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Courgette&family=Lobster&family=Monofett&family=Tapestry&display=swap');
+
+*{
+    font-family:'Lobster' ;
+}
+
+p{
+    font-family:'Courgette' ;
+}
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 5;
+    }
+}

@@ -1,0 +1,35 @@
+
+<h1>Bienvenido Invocador</h1>
+
+<div class="contenedor">
+    <div class="card text-center">
+      <div class="card-header">
+        <b>LOGIN</b>
+      </div>
+      <div class="card-body p-4">
+  
+        <label>Email</label>
+        <input class="form-control m-2" type="email" placeholder="ingrese su email" [(ngModel)]="usuario.email">
+        <label>password</label>
+        <input class="form-control m-2" type="password"  placeholder="ingrese su password" [(ngModel)]="usuario.password">
+  
+        <div>
+          <button class="btn btn-primary btn-block m-2" (click)="ingresar()">Ingresar</button>
+          <button class="btn btn-info btn-block m-2" (click)="ingresarConGoogle()">Ingresar con Google</button>
+        </div>
+        <label >Aun no tienes cuenta? <a [routerLink]="['/registrar']">Registrate</a></label>
+      </div>
+      <div>
+        <button class="btn btn-danger m-2" (click)="obtenerusuariologeado()">Usuario Logeado</button>
+        <button class="btn btn-danger m-2" [routerLink]="['/login']" (click)="logout()">logout</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="consulta">
+    <a class="links" [routerLink]="['/home']">Home</a>
+    <a class="links" [routerLink]="['/contacto']">Contacto</a>
+    <a class="links" [routerLink]="['/ayuda']">Ayuda</a>
+    <a class="links" [routerLink]="['/creditos']">Creditos</a>
+  </div>
+  

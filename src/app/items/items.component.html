@@ -1,0 +1,9 @@
+<div class="fondo card-columns">
+    <div class="card" *ngFor="let h of misitems, let i=index">
+      <img src={{h.img}} class="card-img-top" alt="...">
+      <div class="card-body fondo">
+        <h5 class="card-title">{{h.nombre}}</h5>
+        <p class="card-text">{{h.bio}}</p>
+        <p class="card-text">Precio: {{h.costo}}</p>
+    </div>
+  </div>

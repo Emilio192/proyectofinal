@@ -1,0 +1,22 @@
+<nav class="navbar ">
+  <a class="navbar-brand" href="#">
+    <img src="assets/img/logo.webp"
+      alt=""
+      width="30"
+      height="24"
+      class="d-inline-block align-text-top"
+    />
+    RiotGames
+  </a>
+  <a class="navbar-brand" href="#" *ngIf="userLogged|async as user">
+    <img style="border-radius: 100%;" *ngIf="user.photoURL"
+      src="{{user.photoURL}}"
+      alt=""
+      width="30"
+      height="24"
+      class="d-inline-block align-text-top"
+    />
+    {{user.email}}
+  </a>
+</nav>
+

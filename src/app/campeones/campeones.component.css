@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Courgette&family=Lobster&family=Monofett&family=Tapestry&display=swap');
+h1{
+    text-align: center;
+    font-family: 'Tapestry';
+}
+
+p{
+    font-family:'Contrail One';
+}
+
+.card{
+    background: #413F42;
+    /* border:solid 2px #1363DF; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-body{
+    background: #E0DECA;
+    border: solid 0px transparent;
+}
+
+.card-img-top{
+    border: none;
+}

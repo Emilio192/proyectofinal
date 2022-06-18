@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Courgette&family=Lobster&family=Monofett&family=Tapestry&display=swap');
+
+*{
+   font-family: 'Lobster'; 
+}
+
+h1{
+    text-align: center;
+}
+
+.card{
+    
+    padding: 20px;
+    margin: 20px;
+}

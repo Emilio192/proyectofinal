@@ -1,0 +1,27 @@
+
+<div class="contenedor">
+ 
+    <div class="card text-center m-4">
+      <div class="card-header">
+        <b>Registrarse</b>
+      </div>
+      <div class="card-body p-4">
+  
+        <label>Nombre</label>
+        <input class="form-control m-2" type="nombre" placeholder="Ingrese su Nombre" [(ngModel)]="usuario.nombre">
+        <label>Email</label>
+        <input class="form-control m-2" type="email" placeholder="Ingrese su email" [(ngModel)]="usuario.email">
+        <label>password</label>
+        <input class="form-control m-2" type="password" name="password"  placeholder="Ingrese su Contraseña" [(ngModel)]="usuario.password" #Password="ngModel" minlength="6" required="">
+        <label>Confirmar Contraseña</label>
+        <input class="form-control m-2" type="password"  placeholder="Confirme su Contraseña" [(ngModel)]="usuario.confirmpassword" #ConfirmPassword="ngModel" minlength="6" required="">
+        
+        <button class="btn btn-info btn-block m-2" (click)="registrar()" [routerLink]="['/login']" >Registrarse</button>
+        
+      
+    </div>
+  </div>
+  
+  
+  
+  
