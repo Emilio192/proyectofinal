@@ -11,6 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { RunaterraComponent } from './runaterra/runaterra.component';
 import { canActivate,redirectUnauthorizedTo } from '@angular/fire/auth-guard'; 
+import { UsuarioComponent } from './usuario/usuario.component';
 
 const routes: Routes = [
   {path: 'registrar', component: RegistrarComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path: 'contacto', component: ContactoComponent},
   {path: 'ayuda', component: AyudaComponent},
   {path: 'creditos', component: CreditosComponent},
+  {path: 'usuario', component: UsuarioComponent},
   {path: '**', pathMatch:'full',redirectTo: 'login'}
 ];
 @NgModule({

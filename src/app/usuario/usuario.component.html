@@ -1,1 +1,8 @@
-<p>usuario works!</p>
+<div class="contenedor">
+  <p class="usuario">Usuario </p>
+  <p class="email">Correo</p>
+  <div  *ngFor="let dts of tabla">
+    <p class="nombre">{{dts.nombre}}   </p>
+    <p class="correo">   {{dts.email}}</p>
+  </div>
+</div>

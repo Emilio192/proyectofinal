@@ -19,6 +19,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { AyudaComponent } from './ayuda/ayuda.component';
 import { CreditosComponent } from './creditos/creditos.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { CostoPipe } from './services/costo.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { UsuarioComponent } from './usuario/usuario.component';
     ContactoComponent,
     AyudaComponent,
     CreditosComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    CostoPipe
   ],
   imports: [
     BrowserModule,

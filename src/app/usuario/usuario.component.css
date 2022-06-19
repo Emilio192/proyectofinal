@@ -1,0 +1,34 @@
+.contenedor{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin-left: 15px;
+    margin-right: 100px;
+}
+
+.correo{
+    position: relative;
+    left: 60px;
+    bottom: 43px;
+}
+
+.nombre{
+    position: relative;
+    right:60px;
+}
+
+.email{
+    position: relative;
+    left:70px;
+}
+
+.usuario{
+    position: relative;
+    top: 40px;
+    right:110px;
+}

@@ -1,0 +1,36 @@
+[debug] [2022-06-19T02:55:02.332Z] ----------------------------------------------------------------------
+[debug] [2022-06-19T02:55:02.334Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-06-19T02:55:02.335Z] CLI Version:   11.0.1
+[debug] [2022-06-19T02:55:02.335Z] Platform:      win32
+[debug] [2022-06-19T02:55:02.335Z] Node Version:  v16.14.0
+[debug] [2022-06-19T02:55:02.336Z] Time:          Sat Jun 18 2022 21:55:02 GMT-0500 (hora de verano central)
+[debug] [2022-06-19T02:55:02.336Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-19T02:55:02.399Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-19T02:55:02.399Z] > authorizing via signed-in user (emilio05090127@gmail.com)
+[debug] [2022-06-19T02:55:02.399Z] [iam] checking project final-7d12e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-06-19T02:55:02.400Z] > refreshing access token with scopes: []
+[debug] [2022-06-19T02:55:02.401Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-06-19T02:55:02.655Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 19 Jun 2022 02:55:02 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-06-19T02:55:02.671Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-7d12e:testIamPermissions [none]
+[debug] [2022-06-19T02:55:02.671Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-7d12e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-19T02:55:03.100Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-7d12e:testIamPermissions 200
+[debug] [2022-06-19T02:55:03.100Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-7d12e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-19T02:55:03.103Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/final-7d12e [none]
+[debug] [2022-06-19T02:55:03.452Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/final-7d12e 200
+[debug] [2022-06-19T02:55:03.452Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/final-7d12e {"projectId":"final-7d12e","projectNumber":"1085564557619","displayName":"Final","name":"projects/final-7d12e","resources":{"hostingSite":"final-7d12e","storageBucket":"final-7d12e.appspot.com","locationId":"asia-east2"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'final-7d12e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-06-19T02:55:03.459Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/final-7d12e [none]
+[debug] [2022-06-19T02:55:03.729Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/final-7d12e 200
+[debug] [2022-06-19T02:55:03.729Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/final-7d12e {"projectId":"final-7d12e","projectNumber":"1085564557619","displayName":"Final","name":"projects/final-7d12e","resources":{"hostingSite":"final-7d12e","storageBucket":"final-7d12e.appspot.com","locationId":"asia-east2"},"state":"ACTIVE"}
+[debug] [2022-06-19T02:55:03.733Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1085564557619/sites/final-7d12e/versions [none]
+[debug] [2022-06-19T02:55:03.734Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1085564557619/sites/final-7d12e/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-06-19T02:55:04.556Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1085564557619/sites/final-7d12e/versions 200
+[debug] [2022-06-19T02:55:04.556Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1085564557619/sites/final-7d12e/versions {"name":"projects/1085564557619/sites/final-7d12e/versions/5018deaf9409b8cf","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[final-7d12e]: beginning deploy... 
+[info] i  hosting[final-7d12e]: found 47 files in dist/final 
+[debug] [2022-06-19T02:55:04.573Z] [hosting] uploading with 200 concurrency
